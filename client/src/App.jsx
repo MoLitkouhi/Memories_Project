@@ -3,6 +3,8 @@ import React from 'react';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 // IMPORTING IMAGE
 import memories from './assets/images/memories.png';
+import Form from './component/form/form';
+import Posts from './component/posts/posts';
 
 const App = () => {
   return (
@@ -17,16 +19,21 @@ const App = () => {
       {/* GROW COMPONENT PROVIDE SIMPLE ANIMATION. */}
       <Grow in>
         <Container>
-          <Grid container justify='space-between' alignItems='stretch' spacing={3}>
+          <Grid
+            container
+            justify="space-between"
+            alignItems="stretch"
+            spacing={3}
+          >
             <Grid item xs={12} sm={7}>
               <Posts />
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Form/>
+              <Form />
             </Grid>
           </Grid>
         </Container>
-      </Grow >
+      </Grow>
     </Container>
   );
 };
