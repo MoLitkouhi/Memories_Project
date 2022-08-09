@@ -1,9 +1,11 @@
 import React from "react";
 
-export const Form = () => {
+const Form = () => {
   return (
     <div>
       <h1>Form Component</h1>
     </div>
   )
 }
+
+export default Form;
