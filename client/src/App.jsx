@@ -5,8 +5,11 @@ import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 import memories from './assets/images/memories.png';
 import Form from './component/form/form';
 import Posts from './component/posts/posts';
+import ustStyles from './styles';
 
 const App = () => {
+  const classes = ustStyles();
+
   return (
     <Container maxWidth="lg">
       <AppBar position="static" color="inherit">
