@@ -12,12 +12,12 @@ const App = () => {
 
   return (
     <Container maxWidth="lg">
-      <AppBar position="static" color="inherit">
+      <AppBar className={ classes.appBar } position="static" color="inherit">
         {/* USING TYPOGRAPHY COMPONENT USUALLY FOR TEXTUAL CONTENT  */}
-        <Typography variant="h2" align="center">
+        <Typography className={ classes.heading } variant="h2" align="center">
           Memories
         </Typography>
-        <img src={memories} alt="memories" height="30 0" />
+        <img className={ classes.image } src={memories} alt="memories" height="60" />
       </AppBar>
       {/* GROW COMPONENT PROVIDE SIMPLE ANIMATION. */}
       <Grow in>
